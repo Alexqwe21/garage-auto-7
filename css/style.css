@@ -22,49 +22,73 @@
   --cor-quaternaria: #DCDCDC;
 }
 
-.titulo_principal_carro{
-margin-top: 14px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-
-
-.km_rodado{
+.titulo_principal_carro {
+  margin-top: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  img{
-    margin-right: 10px;
+
+
+  .km_rodado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
   }
 }
-}
 
-.linha_branca{
+.linha_branca {
   margin: 5px 15px 0 15px;
   height: 3px;
   border-radius: 12px;
   background-color: white;
 
 }
-.info_complementares{
+
+.info_veiculo_vendas {
   display: flex;
-  justify-content: space-around;
-.ano_carro{
-  width: 50px;
-  height: 30px;
-  background-color: #000000;
-  border-radius: 2px;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
-  p{
-    color: white;
+  font-size: 15px;
+  color: white;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.3px #000000;
+}
+
+.info_complementares {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+  .ano_carro,
+  .carro_preco {
+    width: 50px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+
+    p {
+      color: white;
+    }
   }
 }
+
+.carro_preco {
+  width: auto !important;
+  padding: 5px;
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.3px #000000;
+  }
 }
-
-
 
 
 .banner_home {
@@ -213,7 +237,7 @@ align-items: center;
     width: 521px;
     background-color: var(--cor-primaria);
     border-radius: 7px;
-   margin-bottom: 54px;
+    margin-bottom: 54px;
 
     .conteudo {
       background-color: var(--cor-primaria);
@@ -221,5 +245,57 @@ align-items: center;
       border-top-left-radius: 100px;
     }
 
+  }
+
+  .carro_venda_menores {
+    height: 250px;
+    width: 252px;
+    background-color: var(--cor-primaria);
+    border-radius: 7px;
+    margin-bottom: 50px;
+
+    .conteudo {
+      background-color: var(--cor-primaria);
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+    }
+
+    .titulo_principal_carro {
+      flex-direction: column;
+      margin-top: 7px;
+
+      h2 {
+        font-size: 15px;
+      }
+    }
+
+    .km_rodado {
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      >div {
+
+        display: flex;
+        align-items: center;
+
+      }
+
+      .carro_preco {
+        margin-bottom: 6px;
+        height: 30px;
+        background-color: #000000;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        color: white;
+
+        p {
+          font-size: 10px;
+        }
+      }
+    }
   }
 }
