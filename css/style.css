@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'TTLakesNeue';
+  src: url('../fontes/tt_lakes_neue/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body,
+h2 {
+  font-family: 'TTLakesNeue', sans-serif !important;
+  font-weight: bold;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +35,18 @@
   --cor-secundaria: #FFFFFF;
   --cor-terciaria: #000000;
   --cor-quaternaria: #DCDCDC;
+}
+
+.lado_a_lado {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+}
+
+.lado_a_lado_carros_venda_men {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .titulo_principal_carro {
@@ -54,7 +81,7 @@
   font-size: 15px;
   color: white;
   font-weight: bolder;
-  -webkit-text-stroke: 0.3px #000000;
+
 }
 
 .info_complementares {
@@ -86,7 +113,6 @@
   p {
     font-size: 20px;
     font-weight: bold;
-    -webkit-text-stroke: 0.3px #000000;
   }
 }
 
@@ -248,11 +274,11 @@
   }
 
   .carro_venda_menores {
-    height: 250px;
+    height: 280px;
     width: 252px;
     background-color: var(--cor-primaria);
     border-radius: 7px;
-    margin-bottom: 50px;
+
 
     .conteudo {
       background-color: var(--cor-primaria);
@@ -297,5 +323,123 @@
         }
       }
     }
+
+    .info_complementares {
+      font-weight: bolder;
+
+      p {
+        font-size: 10px;
+        font-weight: bolder;
+      }
+    }
   }
+
+
+}
+
+
+.veiculo_combina {
+
+  background-image: url('../img/foto_fundo_ache_ve.png');
+  background-repeat: no-repeat;
+  height: 650px;
+  background-position: center center;
+
+  .texto {
+    padding-top: 65px;
+
+    h2 {
+      font-size: 55px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+
+      span {
+        margin-left: 15px;
+        font-size: 55px;
+        color: var(--cor-primaria);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .lado_a_lado {
+    margin-top: 70px;
+    justify-content: space-evenly;
+  }
+
+  .procura_carro,
+  .vender_carro {
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+
+    .icon_carro {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 35px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      h3 {
+        font-family: "Mulish", sans-serif;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+
+      p {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        line-height: 30px;
+        font-size: 20px;
+      }
+
+      .inventario_venda {
+        a {
+          width: 100%;
+          height: 45px;
+          background-color: #000000;
+          border-radius: 2px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 10px;
+          color: white;
+          font-family: "Mulish", sans-serif;
+          font-weight: bolder;
+          font-size: 20px;
+          letter-spacing: 7px;
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+  .vender_carro {
+    background-color: #E9BF5B;
+    color: white !important;
+    
+    .icon_carro{
+      gap: 31px;
+    }
+
+     p{
+    font-weight: 500 !important;
+  }
+
+
+  }
+
+ 
+
 }
