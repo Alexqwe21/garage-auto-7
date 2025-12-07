@@ -116,6 +116,13 @@ h2 {
   }
 }
 
+.servico {
+  width: 280px;
+  height: 205px;
+  border: 2px solid #C9C9C9;
+ 
+}
+
 
 .banner_home {
   background: url(../img/Banner\ home.png);
@@ -428,18 +435,63 @@ h2 {
   .vender_carro {
     background-color: #E9BF5B;
     color: white !important;
-    
-    .icon_carro{
+
+    .icon_carro {
       gap: 31px;
     }
 
-     p{
-    font-weight: 500 !important;
-  }
+    p {
+      font-weight: 500 !important;
+    }
 
 
   }
 
- 
 
+
+}
+
+.servicos {
+  .site {
+    text-align: center;
+
+    .lado_a_lado_servico {
+      display: flex;
+       gap: 30px;
+      .servico {
+        padding: 10px;
+
+        .icone_servio {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+          }
+
+          h4 {
+            font-family: "Mulish", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+          }
+
+
+        }
+
+        div {
+          p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            color: #8A8A8A;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+  }
 }
