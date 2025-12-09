@@ -532,3 +532,49 @@ h2 {
     }
   }
 }
+
+
+.sonho_realizado {
+  margin-top: 50px;
+  width: 100%;
+
+  .site {
+    .lado_a_lado {
+      justify-content: space-between;
+      align-items: normal;
+
+      .sonho_realizado_info {
+        .texto_sonho {
+          h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: var(--cor-primaria);
+
+            span {
+              color: #000000;
+              margin-left: 5px;
+            }
+          }
+
+          hr {
+            margin-top: 15px;
+            height: 5px;
+            background-color: var(--cor-primaria);
+            border: none;
+            border-radius: 2px;
+          }
+        }
+
+        .paragrafo {
+          p {
+            width: 90%;
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        }
+      }
+    }
+  }
+}
