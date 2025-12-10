@@ -538,6 +538,14 @@ h2 {
   margin-top: 50px;
   width: 100%;
 
+  hr {
+    margin-top: 15px;
+    height: 5px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 2px; 
+  }
+
   .site {
     .lado_a_lado {
       justify-content: space-between;
@@ -573,6 +581,32 @@ h2 {
             font-size: 20px;
             font-family: 'Times New Roman', Times, serif;
           }
+        }
+      }
+
+      .fale_com_vendedor {
+        display: flex;
+        margin-top: 60px;
+
+        .texto {
+          margin-left: 20px;
+
+          h4 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+           
+            line-height: 30px;
+          }
+
+          span {
+            font-weight: normal;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 25px;
+          }
+
+
         }
       }
     }
