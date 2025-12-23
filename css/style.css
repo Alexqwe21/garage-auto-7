@@ -43,6 +43,42 @@ h2 {
   align-items: center;
 }
 
+.titulo_pricipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+
+  h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+
+    span {
+      color: var(--cor-primaria);
+    }
+  }
+
+  hr {
+
+    border-radius: 2px;
+    background-color: #E9BF5B;
+    color: #E9BF5B;
+    border: 3px solid #E9BF5B;
+    width: 65%;
+    margin-top: 23px;
+  }
+
+  p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
 .lado_a_lado_carros_venda_men {
   display: flex;
   gap: 40px;
@@ -120,7 +156,7 @@ h2 {
   width: 280px;
   height: 205px;
   border: 2px solid #C9C9C9;
- 
+
 }
 
 
@@ -266,7 +302,8 @@ h2 {
   }
 }
 
-.carros_venda_home {
+.carros_venda_home,
+.carros_recentes {
   .carro_destaque {
     height: 500px;
     width: 521px;
@@ -459,7 +496,8 @@ h2 {
 
     .lado_a_lado_servico {
       display: flex;
-       gap: 30px;
+      gap: 30px;
+
       .servico {
         padding: 10px;
 
@@ -496,6 +534,322 @@ h2 {
       }
     }
   }
+}
+
+
+.carros_recentes {
+  .site {
+
+    .lado_a_lado_carros_venda_men {
+      justify-content: space-between;
+
+      .carro_venda_menores {
+
+
+        .entre_em_contato {
+          position: relative;
+          width: 150px;
+          height: 23px;
+          border-radius: 2px;
+          background-color: var(--cor-primaria);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 255px;
+          left: 90px;
+
+          strong {
+            font-size: 12px;
+            color: white;
+            font-weight: bolder;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+.sonho_realizado {
+  margin-top: 50px;
+  width: 100%;
+
+  hr {
+    margin-top: 15px;
+    height: 5px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 2px;
+  }
+
+  .site {
+    .lado_a_lado {
+      justify-content: space-between;
+      align-items: normal;
+
+      .sonho_realizado_info {
+        .texto_sonho {
+          h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: var(--cor-primaria);
+
+            span {
+              color: #000000;
+              margin-left: 5px;
+            }
+          }
+
+          hr {
+            margin-top: 15px;
+            height: 5px;
+            background-color: var(--cor-primaria);
+            border: none;
+            border-radius: 2px;
+          }
+        }
+
+        .paragrafo {
+          p {
+            width: 90%;
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        }
+      }
+
+      .fale_com_vendedor {
+        display: flex;
+        margin-top: 60px;
+
+        .texto {
+          margin-left: 20px;
+
+          h4 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+
+            line-height: 30px;
+          }
+
+          span {
+            font-weight: normal;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 25px;
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+.conheca_equipe {
+  background-image: url(../img/conheca_equipe_fundo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+
+  .site {
+    .colaboradores {
+      display: flex;
+      justify-content: space-between;
+      .colaborador {
+        width: 200px;
+        height: 280px;
+        margin-top: 60px;
+
+
+        h3,
+        p {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+          margin-top: 17px;
+          text-align: center;
+
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  height: 380px;
+  background-color: #000000;
+ 
+
+.hr{
+  margin-top: 85px;
+} 
+}
+
+
+.carros_recentes {
+  .site {
+
+    .lado_a_lado_carros_venda_men {
+      justify-content: space-between;
+
+      .carro_venda_menores {
+
+
+        .entre_em_contato {
+          position: relative;
+          width: 150px;
+          height: 23px;
+          border-radius: 2px;
+          background-color: var(--cor-primaria);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 255px;
+          left: 90px;
+
+          strong {
+            font-size: 12px;
+            color: white;
+            font-weight: bolder;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+.sonho_realizado {
+  margin-top: 50px;
+  width: 100%;
+
+  hr {
+    margin-top: 15px;
+    height: 5px;
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 2px;
+  }
+
+  .site {
+    .lado_a_lado {
+      justify-content: space-between;
+      align-items: normal;
+
+      .sonho_realizado_info {
+        .texto_sonho {
+          h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: var(--cor-primaria);
+
+            span {
+              color: #000000;
+              margin-left: 5px;
+            }
+          }
+
+          hr {
+            margin-top: 15px;
+            height: 5px;
+            background-color: var(--cor-primaria);
+            border: none;
+            border-radius: 2px;
+          }
+        }
+
+        .paragrafo {
+          p {
+            width: 90%;
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        }
+      }
+
+      .fale_com_vendedor {
+        display: flex;
+        margin-top: 60px;
+
+        .texto {
+          margin-left: 20px;
+
+          h4 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+
+            line-height: 30px;
+          }
+
+          span {
+            font-weight: normal;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 25px;
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+.conheca_equipe {
+  background-image: url(../img/conheca_equipe_fundo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+
+  .site {
+    .colaboradores {
+      display: flex;
+      justify-content: space-between;
+      .colaborador {
+        width: 200px;
+        height: 280px;
+        margin-top: 60px;
+
+
+        h3,
+        p {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+          margin-top: 17px;
+          text-align: center;
+
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  height: 380px;
+  background-color: #000000;
+ 
+
+.hr{
+  margin-top: 85px;
+} 
 }
 
 .carros_recentes{
