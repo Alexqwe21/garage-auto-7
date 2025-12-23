@@ -41,7 +41,10 @@
     <section class="encontre_carro">
       <article class="site">
         <div class="texto">
-          <h2>Encontre o carro<span>Perfeito para você</span></h2>
+<h2>
+  Encontre o carro
+  <span id="palavra-dinamica">Perfeito para você</span>
+</h2>
           <div class="forms_procurar_carro">
             <form action="">
               <select name="#" id="#">
@@ -59,31 +62,18 @@
             </form>
 
           </div>
-          <div class="marcas">
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
+        <div class="marcas">
+  <div class="marcas-track">
 
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
+    <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+ <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+   <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+   <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+  <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+    <div class="marca"><img src="img/marca_bmw.svg" alt="BMW"></div>
+  </div>
+</div>
 
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-          </div>
         </div>
 
 
@@ -1146,6 +1136,67 @@
 
   });
 </script>
+
+
+<script>
+  const track = document.querySelector('.marcas-track');
+
+  // Duplica os itens para criar o loop infinito
+  track.innerHTML += track.innerHTML;
+
+  let position = 0;
+  const speed = 0.3; // quanto menor, mais devagar
+
+  function animate() {
+    position -= speed;
+
+    // quando andar metade, volta para o início
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0;
+    }
+
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+
+<script>
+  const palavras = [
+    "Perfeito para você",
+    "Ideal para sua família",
+    "Do seu jeito",
+    "Com o melhor preço",
+    "Que combina com você"
+  ];
+
+  const span = document.getElementById("palavra-dinamica");
+  let index = 0;
+
+  // estado inicial
+  span.classList.add("entrar");
+
+  setInterval(() => {
+    // anima saída
+    span.classList.remove("entrar");
+    span.classList.add("sair");
+
+    setTimeout(() => {
+      index = (index + 1) % palavras.length;
+      span.textContent = palavras[index];
+
+      // anima entrada
+      span.classList.remove("sair");
+      span.classList.add("entrar");
+    }, 600);
+
+  }, 4000);
+</script>
+
+
+
 
 </body>
 
