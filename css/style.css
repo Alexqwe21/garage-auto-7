@@ -124,6 +124,8 @@ h2 {
 }
 
 
+
+
 .banner_home {
   background: url(../img/Banner\ home.png);
   width: 100%;
@@ -494,4 +496,34 @@ h2 {
       }
     }
   }
+}
+
+.carros_recentes{
+margin-top: 25px;
+.site{
+  .texto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    h2{
+      color: var(--cor-primaria);
+      font-size: 55px;
+      font-weight: bolder;
+      border-bottom: 5px solid var(--cor-primaria);
+      border-radius: 2px;
+      width: 50%;
+      span{
+        color: #000000;
+      }
+    }
+  }
+  p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
 }
