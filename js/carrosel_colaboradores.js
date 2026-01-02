@@ -1,12 +1,12 @@
 
 $(function () {
 
-  const $carousel = $('.lado_a_lado_carros_venda_men');
+  const $carousel = $('.colaboradores');
 
   if (!$carousel.length || $carousel.hasClass('slick-initialized')) return;
 
   $carousel.slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     dots: false,

@@ -86,12 +86,17 @@ option {
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 30px;
-  justify-content: center;
+  justify-content: space-between;
+
+  .slick-track{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
 
 
 
 
-  
+
 }
 
 .titulo_principal_carro {
@@ -430,27 +435,29 @@ option {
 .carros_recentes {
 
 
-.slick-prev:before, .slick-next:before{
-  color: var(--cor-primaria);
-  font-size: 25px;
-}
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--cor-primaria);
+    font-size: 25px;
+  }
 
 
 
 
   .carro_destaque {
- 
-  width: 100%;
-  height: 550px;
-  background-color: var(--cor-primaria);
-  border-radius: 7px;
-  margin: 0 10px;
+
+    width: 100%;
+    height: 550px;
+    background-color: var(--cor-primaria);
+    border-radius: 7px;
+    margin: 0 10px;
 
     .conteudo {
       background-color: var(--cor-primaria);
       border-top-right-radius: 100px;
       border-top-left-radius: 100px;
-      img{
+
+      img {
         width: 100%;
       }
     }
@@ -458,8 +465,8 @@ option {
   }
 
   .carro_venda_menores {
-    height: 310px;
-    width: 252px;
+    height: 310px !important;
+    width: 252px !important;
     background-color: var(--cor-primaria);
     border-radius: 7px;
 
@@ -689,6 +696,7 @@ option {
 
     .lado_a_lado_carros_venda_men {
       justify-content: space-between;
+      display: flex;
 
       .carro_venda_menores {
 
@@ -702,7 +710,7 @@ option {
           display: flex;
           align-items: center;
           justify-content: center;
-          bottom: 255px;
+          bottom: 280px;
           left: 90px;
 
           strong {
@@ -798,38 +806,7 @@ option {
   }
 }
 
-.conheca_equipe {
-  background-image: url(../img/conheca_equipe_fundo.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 650px;
 
-  .site {
-    .colaboradores {
-      display: flex;
-      justify-content: space-between;
-
-      .colaborador {
-        width: 200px;
-        height: 280px;
-        margin-top: 60px;
-
-
-        h3,
-        p {
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 20px;
-          font-weight: bold;
-          text-align: center;
-          color: white;
-          margin-top: 17px;
-          text-align: center;
-
-        }
-      }
-    }
-  }
-}
 
 
 
@@ -923,32 +900,55 @@ option {
   background-position: center center;
   height: 650px;
 
+  .slick-prev:before,
+  .slick-next:before {
+    display: none !important;
+  }
+
+  .slick-dots {
+    display: none !important;
+  }
+
   .site {
     .colaboradores {
-      display: flex;
-      justify-content: space-between;
 
+    
       .colaborador {
+        width: 280px;
+        margin-top: 60px;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
         width: 200px;
         height: 280px;
-        margin-top: 60px;
+          margin-bottom: 12px;
+        }
 
+        h3 {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 22px;    
+          font-weight: bold;
+          margin-top: 10px;
+          text-align: center;
+          color:  white;
+        }
 
-        h3,
         p {
           font-family: 'Times New Roman', Times, serif;
-          font-size: 20px;
-          font-weight: bold;
+          font-size: 16px;
+          margin-top: 5px;
           text-align: center;
           color: white;
-          margin-top: 17px;
-          text-align: center;
-
         }
       }
     }
   }
 }
+
 
 .carros_recentes {
   margin-top: 25px;
