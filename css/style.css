@@ -88,7 +88,7 @@ option {
   margin-top: 30px;
   justify-content: space-between;
 
-  .slick-track{
+  .slick-track {
     display: flex !important;
     justify-content: space-between !important;
   }
@@ -912,7 +912,7 @@ option {
   .site {
     .colaboradores {
 
-    
+
       .colaborador {
         width: 280px;
         margin-top: 60px;
@@ -923,18 +923,18 @@ option {
         align-items: center;
 
         img {
-        width: 200px;
-        height: 280px;
+          width: 200px;
+          height: 280px;
           margin-bottom: 12px;
         }
 
         h3 {
           font-family: 'Times New Roman', Times, serif;
-          font-size: 22px;    
+          font-size: 22px;
           font-weight: bold;
           margin-top: 10px;
           text-align: center;
-          color:  white;
+          color: white;
         }
 
         p {
@@ -1125,3 +1125,116 @@ footer {
     }
   }
 }
+
+
+
+
+/* AQUI COMEÇA O RESPONSIVO DA PAGINA HOME  */
+@media (max-width: 1024px) {
+
+
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .carros_venda_home,
+  .carros_recentes {
+    .carro_destaque {
+      height: 480px;
+    }
+  }
+
+
+  .lado_a_lado_carros_venda_men {
+    .slick-slide {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column;
+    }
+  }
+
+
+
+  .sonho_realizado {
+    .site {
+      .lado_a_lado {
+        width: 80%;
+
+        .sonho_realizado_info{
+          padding: 10px;
+        }
+        .foto_destaque {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          img {
+            width: 510px;
+          }
+
+        }
+      }
+    }
+  }
+
+
+  .servicos {
+    .site {
+      .lado_a_lado_servico {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .servico {
+          width: 350px;
+        }
+      }
+    }
+  }
+
+
+
+
+  .carros_recentes {
+    & .site {
+      & .lado_a_lado_carros_venda_men {
+        & .carro_venda_menores {
+          .entre_em_contato {
+            left: 40px;
+          }
+
+          .info_complementares {
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .titulo_pricipal {
+    p {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-weight: normal;
+        font-size: 20px;
+        margin-top: 30px;
+        text-align: center;
+        margin: 30px 10px 0 10px;
+        line-height: 25px;
+    }
+}
+
+
+
+
+}
+  /* AQUI COMEÇA O RESPONSIVO DA PAGINA HOME  */
