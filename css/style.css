@@ -1169,9 +1169,10 @@ footer {
       .lado_a_lado {
         width: 80%;
 
-        .sonho_realizado_info{
+        .sonho_realizado_info {
           padding: 10px;
         }
+
         .foto_destaque {
           display: flex;
           flex-direction: column;
@@ -1222,19 +1223,421 @@ footer {
 
   .titulo_pricipal {
     p {
-        font-family: 'Times New Roman', Times, serif;
-        color: white;
-        font-weight: normal;
-        font-size: 20px;
-        margin-top: 30px;
-        text-align: center;
-        margin: 30px 10px 0 10px;
-        line-height: 25px;
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      font-weight: normal;
+      font-size: 20px;
+      margin-top: 30px;
+      text-align: center;
+      margin: 30px 10px 0 10px;
+      line-height: 25px;
     }
-}
+  }
 
 
 
 
 }
-  /* AQUI COMEÇA O RESPONSIVO DA PAGINA HOME  */
+
+/* AQUI COMEÇA O RESPONSIVO DA PAGINA HOME  */
+
+
+
+
+/* ===== BOTÃO HAMBÚRGUER ===== */
+.menu-toggle {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+  bottom: 20px;
+}
+
+.menu-toggle span {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 9px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 18px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+/* ===== DESKTOP ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.login-mobile {
+  display: none;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 769px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0b2a3b;
+    /* ajuste a cor */
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    max-height: 400px;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  nav ul li a {
+    padding: 15px;
+    display: block;
+    color: #fff;
+  }
+
+  .login {
+    margin-left: auto;
+  }
+
+
+  .login-desktop {
+    display: none;
+  }
+
+  .login-mobile {
+    display: block;
+  }
+
+  .login-mobile a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    color: #fff;
+  }
+
+  .login-mobile img {
+    width: 20px;
+  }
+
+
+  .banner_home {
+    & .encontre_carro {
+      & .site {
+        & .texto {
+          h2 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .encontre_carro {
+    & .site {
+      & .texto {
+        .forms_procurar_carro {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+
+
+  .carros_venda_home,
+  .carros_recentes {
+    .carro_destaque {
+      height: 680px;
+    }
+  }
+
+
+
+  .veiculo_combina {
+    height: 940px;
+    background-repeat: repeat;
+
+    .texto {
+      padding-top: 25px;
+
+      h2 {
+        font-size: 40px;
+
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .lado_a_lado {
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 40px;
+    }
+  }
+
+
+  .servicos {
+    & .site {
+      .lado_a_lado_servico {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+
+  .carros_recentes {
+    & .site {
+
+      p {
+        font-size: 18px;
+      }
+
+      & .texto {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+
+
+  .sonho_realizado {
+    & .site {
+      .lado_a_lado {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        .foto_destaque {
+          align-items: center;
+        }
+
+      }
+
+      .paragrafo {
+        p {
+          width: 100% !important;
+          text-align: center !important;
+        }
+      }
+    }
+  }
+
+
+  .titulo_pricipal {
+    h2 {
+      font-size: 45px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+
+  footer {
+    & .site {
+      & .lado_a_lado {
+        nav {
+          display: none;
+        }
+
+        .info_logo {
+          .telefone_footer {
+            margin-top: 15px;
+
+            .numero_footer {
+              p {
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: 480px) {
+
+
+  .banner_home {
+    background-repeat: repeat;
+    height: 730px;
+    background-position: center top;
+
+    & .encontre_carro {
+      & .site {
+        & .texto {
+          height: auto;
+
+          h2 {
+            font-size: 35px;
+            text-align: center;
+          }
+
+          .forms_procurar_carro {
+            height: 300px;
+
+            form {
+              flex-direction: column;
+              height: auto;
+              width: 100%;
+              gap: 20px;
+
+              select {
+                width: 90%;
+              }
+
+              .pesquisar {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+
+                button {
+                  width: 90%;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .carros_venda_home,
+  .carros_recentes {
+    .titulo_principal_carro {
+
+      h2,
+      .km_rodado {
+        font-weight: bold;
+        color: white;
+        font-size: 13px;
+      }
+    }
+
+    .carro_destaque {
+      height: 390px;
+
+      .ano_carro,
+      .carro_preco {
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .info_veiculo_vendas {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+      .veiculo_combina {
+        a{
+          text-align: center;
+          
+        }
+        height: 1100px;
+        .lado_a_lado{
+          margin-top: 40px;
+        }
+        .texto {
+            padding-top: 25px;
+            h2{
+              font-size: 35px;
+              margin: 0 5px;
+              text-align: center;
+              line-height: 40px;
+              span{
+                font-size: 35px;
+              }
+            }
+        }
+
+        .procura_carro , .vender_carro{
+          width: 340px;
+          height: auto;
+          font-size: 20px;
+         
+          .icon_carro{
+            h3{
+              font-size: 18px;
+            }
+          }
+        }
+    }
+
+    
+
+
+    
+
+
+
+
+
+}

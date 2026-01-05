@@ -21,30 +21,52 @@
 <body>
 
   <div class="banner_home">
-    <header>
+  <header>
+  <div class="site">
+    <nav>
 
-      <div class="site">
-        <nav>
-          <div class="img_lgo">
-            <h1><a href="#"><img src="img/logo_garage.svg" alt="logo"></a></h1>
-          </div>
-          <ul>
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="sobre.html">SOBRE-NOS</a></li>
-            <li><a href="contato.html">CONTATO</a></li>
-            <li><a href="procurar.html">PROCURAR</a></li>
-          </ul>
-
-
-          </ul>
-          <div class="login">
-            <a href="#"><img src="img/login.svg" alt="login"></a>
-          </div>
-        </nav>
-
+      <div class="img_lgo">
+        <h1>
+          <a href="#">
+            <img src="img/logo_garage.svg" alt="logo">
+          </a>
+        </h1>
       </div>
 
-    </header>
+      <!-- BOTÃO MENU -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="menu-list">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="sobre.html">SOBRE-NOS</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+        <li><a href="procurar.html">PROCURAR</a></li>
+
+        <!-- LOGIN MOBILE -->
+        <li class="login-mobile">
+          <a href="#">
+            <img src="img/login.svg" alt="login">
+            Login
+          </a>
+        </li>
+      </ul>
+
+      <!-- LOGIN DESKTOP -->
+      <div class="login login-desktop">
+        <a href="#">
+          <img src="img/login.svg" alt="login">
+        </a>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+
 
     <section class="encontre_carro">
       <article class="site">
@@ -1722,6 +1744,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="js/carrosel_colaboradores.js"></script>
+
+  <script src="js/menu_suspenso.js"></script>
 
   <!-- SLICK -->
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

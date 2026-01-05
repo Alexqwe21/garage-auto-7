@@ -1,19 +1,12 @@
 
-$(function () {
 
-  const $carousel = $('.lado_a_lado_carros_venda_men');
+  $(document).ready(function () {
+    $('.lado_a_lado_carros_venda_men').slick({
+      slidesToShow: 4,       // Desktop
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
 
-  if (!$carousel.length || $carousel.hasClass('slick-initialized')) return;
-
-  $carousel.slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    infinite: false,
-    adaptiveHeight: false,
-      autoplay: true,
-  autoplaySpeed: 3500,
     responsive: [
       {
         breakpoint: 1200,
@@ -28,7 +21,9 @@ $(function () {
         settings: { slidesToShow: 1 }
       }
     ]
+      
+    });
   });
 
-});
+
 
