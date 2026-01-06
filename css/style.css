@@ -1214,7 +1214,7 @@ footer {
       & .lado_a_lado_carros_venda_men {
         & .carro_venda_menores {
           .entre_em_contato {
-            left: 40px;
+            left: 90px;
           }
 
           .info_complementares {
@@ -1583,7 +1583,8 @@ nav ul {
     }
 
     .carro_destaque {
-      height: 390px;
+      height: auto;
+      padding-bottom: 20px;
 
       .ano_carro,
       .carro_preco {
@@ -1594,7 +1595,7 @@ nav ul {
 
       .info_veiculo_vendas {
         p {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -1688,8 +1689,12 @@ nav ul {
 
       .info_complementares {
         gap: 0 !important;
+         p{
+        font-size: 10px !important;
+      }
       }
     }
+
   }
 
 
@@ -1724,12 +1729,20 @@ nav ul {
     }
   }
 
-
-  .titulo_pricipal {
+.conheca_equipe{
+  height: auto;
+  
+ .titulo_pricipal {
     h2 {
-      font-size: 29px;
+      font-size: 25px;
+      text-align: center;
+    }
+    p{
+      font-size: 17px;
     }
   }
+}
+ 
 
 
   footer {
