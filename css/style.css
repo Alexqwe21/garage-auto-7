@@ -88,6 +88,11 @@ option {
   margin-top: 30px;
   justify-content: space-between;
 
+  a {
+    display: flex !important;
+    justify-content: center;
+  }
+
   .slick-track {
     display: flex !important;
     justify-content: space-between !important;
@@ -1596,48 +1601,181 @@ nav ul {
   }
 
 
-      .veiculo_combina {
-        a{
-          text-align: center;
-          
-        }
-        height: 1100px;
-        .lado_a_lado{
-          margin-top: 40px;
-        }
-        .texto {
-            padding-top: 25px;
-            h2{
-              font-size: 35px;
-              margin: 0 5px;
-              text-align: center;
-              line-height: 40px;
-              span{
-                font-size: 35px;
-              }
-            }
-        }
+  .veiculo_combina {
+     height: auto;
+     padding-bottom: 20px;
+    a {
+      text-align: center;
 
-        .procura_carro , .vender_carro{
-          width: 340px;
-          height: auto;
-          font-size: 20px;
-         
-          .icon_carro{
-            h3{
-              font-size: 18px;
+    }
+
+   
+
+    .lado_a_lado {
+      margin-top: 40px;
+    }
+
+    .texto {
+      padding-top: 25px;
+
+      h2 {
+        font-size: 35px;
+        margin: 0 5px;
+        text-align: center;
+        line-height: 40px;
+
+        span {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .procura_carro,
+    .vender_carro {
+      width: 80%;
+      height: auto;
+      font-size: 20px;
+      
+
+      .icon_carro {
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+
+
+  .servicos {
+        & .site {
+            & .lado_a_lado_servico {
+                .servico {
+                    width: 90%;
+                    .icone_servio{
+                      justify-content: center;
+                    }
+                }
             }
-          }
         }
     }
 
-    
-
-
-    
 
 
 
+  .carros_recentes {
+    & .site {
+      p {
+        margin: 0 5px;
+        font-size: 17px;
+        line-height: 30px;
+      }
+
+      .texto {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        h2 {
+          font-size: 30px;
+          width: 90%;
+
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .info_complementares {
+        gap: 0 !important;
+      }
+    }
+  }
 
 
+  .sonho_realizado {
+    & .site {
+      & .lado_a_lado {
+
+
+        .sonho_realizado_info {
+          .texto_sonho {
+            h2 {
+              font-size: 30px;
+            }
+          }
+        }
+
+
+        .fale_com_vendedor {
+          flex-direction: column;
+
+          .texto {
+            margin: 0 !important;
+          }
+        }
+
+        .foto_destaque {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  .titulo_pricipal {
+    h2 {
+      font-size: 29px;
+    }
+  }
+
+
+  footer {
+    height: auto;
+
+    & .site {
+      & .lado_a_lado {
+        flex-direction: column;
+        gap: 30px;
+
+        .info_logo {
+          width: 100%;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          p {
+            margin: 10px 5px;
+          }
+        }
+
+        .redes_footer {
+          width: 100%;
+
+          .loca {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            div {
+              padding: 10px;
+              margin-top: 0px;
+
+              p {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
