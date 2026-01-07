@@ -8,1053 +8,340 @@
   <link rel="stylesheet" href="/css/reset.css">
   <title>GARAGE AUTO 7 </title>
   <link rel="shortcut icon" href="img/logo_garage.svg" type="image/x-icon">
+  <!-- Slick CSS -->
+
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 </head>
 
 <body>
 
-  <div class="banner_home">
+  <div class="banner_home banner_sobre">
     <header>
-
       <div class="site">
         <nav>
+
           <div class="img_lgo">
-            <h1><a href="#"><img src="img/logo_garage.svg" alt="logo"></a></h1>
+            <h1>
+              <a href="#">
+                <img src="img/logo_garage.svg" alt="logo">
+              </a>
+            </h1>
           </div>
-          <ul>
+
+          <!-- BOTÃO MENU -->
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul id="menu-list">
             <li><a href="index.html">HOME</a></li>
             <li><a href="sobre.html">SOBRE-NOS</a></li>
             <li><a href="contato.html">CONTATO</a></li>
             <li><a href="procurar.html">PROCURAR</a></li>
+
+            <!-- LOGIN MOBILE -->
+            <li class="login-mobile">
+              <a href="#">
+                <img src="img/login.svg" alt="login">
+                Login
+              </a>
+            </li>
           </ul>
 
-
-
-          </ul>
-          <div class="login">
-            <a href="#"><img src="img/login.svg" alt="login"></a>
+          <!-- LOGIN DESKTOP -->
+          <div class="login login-desktop">
+            <a href="#">
+              <img src="img/login.svg" alt="login">
+            </a>
           </div>
+
         </nav>
-
       </div>
-
     </header>
 
-    <section class="encontre_carro">
+
+    <section class="titulo_pagina_atual">
       <article class="site">
-        <div class="texto">
-          <h2>Encontre o carro<span>Perfeito para você</span></h2>
-          <div class="forms_procurar_carro">
-            <form action="">
-              <select name="#" id="#">
-                <option value="">Todas as marcas</option>
-              </select>
-              <select name="#" id="#">
-                <option value="">Todos os modelos</option>
-              </select>
-              <select name="#" id="#">
-                <option value="">Preço máximo</option>
-              </select>
-              <div class="pesquisar">
-                <button><img src="img/lupa.svg" alt="Pesquiasr"></button>
-              </div>
-            </form>
-
+        <div class="secao_titulo">
+          <div class="titulo">
+            <h4>SOBRE-<span>NOS</span></h4>
           </div>
-          <div class="marcas">
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
 
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
-
-            <div class="marca">
-              <img src="img/marca_bmw.svg" alt="Marca">
-            </div>
+          <div class="secao_atual">
+            <a href="index.html">HOME</a>
+            <img src="img/seta_secao.svg" alt="Seção atual">
+            <strong>SOBRE-NOS</strong>
           </div>
         </div>
-
 
       </article>
     </section>
 
+
   </div>
 
   <div class="space"></div>
 
-  <section class="carros_venda_home">
+  <section class="bem_vindo">
     <article class="site">
       <div class="lado_a_lado">
-        <div class="carro_destaque">
-          <div class="conteudo">
-            <img src="img/carro_destaque.png" alt="carro">
-          </div>
-
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <img src="img/velocimetro.png" alt="velocimetro">
-              <strong>200.000 KM</strong>
-            </div>
-          </div>
-
-          <div class="linha_branca"></div>
-
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-            <div class="carro_preco">
-              <p>R$ 120.000,00</p>
-            </div>
-          </div>
+        <div class="image_carro">
+          <img src="img/carro_bem_vindo.png" alt="carro">
         </div>
-        <div class="lado_a_lado_carros_venda_men">
-
-
-          <div class="carro_venda_menores">
-            <div class="conteudo">
-              <img src="img/carro_menor.png" alt="Carro">
-            </div>
-            <div class="titulo_principal_carro">
-              <h2>Asterion GrandSport Velocity Edition</h2>
-              <div class="km_rodado">
-                <div class="carro_preco">
-                  <p>R$ 120.000,00</p>
-                </div>
-                <div>
-                  <img src="img/velocimetro.png" alt="velocimetro">
-                  <strong>200.000 KM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="linha_branca"></div>
-            <div class="info_complementares">
-              <div class="ano_carro">
-                <p>2025</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Automatico</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Gasolina</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Ipva pago</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="carro_venda_menores">
-            <div class="conteudo">
-              <img src="img/carro_menor.png" alt="Carro">
-            </div>
-            <div class="titulo_principal_carro">
-              <h2>Asterion GrandSport Velocity Edition</h2>
-              <div class="km_rodado">
-                <div class="carro_preco">
-                  <p>R$ 120.000,00</p>
-                </div>
-                <div>
-                  <img src="img/velocimetro.png" alt="velocimetro">
-                  <strong>200.000 KM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="linha_branca"></div>
-            <div class="info_complementares">
-              <div class="ano_carro">
-                <p>2025</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Automatico</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Gasolina</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Ipva pago</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="carro_venda_menores">
-            <div class="conteudo">
-              <img src="img/carro_menor.png" alt="Carro">
-            </div>
-            <div class="titulo_principal_carro">
-              <h2>Asterion GrandSport Velocity Edition</h2>
-              <div class="km_rodado">
-                <div class="carro_preco">
-                  <p>R$ 120.000,00</p>
-                </div>
-                <div>
-                  <img src="img/velocimetro.png" alt="velocimetro">
-                  <strong>200.000 KM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="linha_branca"></div>
-            <div class="info_complementares">
-              <div class="ano_carro">
-                <p>2025</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Automatico</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Gasolina</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Ipva pago</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="carro_venda_menores">
-            <div class="conteudo">
-              <img src="img/carro_menor.png" alt="Carro">
-            </div>
-            <div class="titulo_principal_carro">
-              <h2>Asterion GrandSport Velocity Edition</h2>
-              <div class="km_rodado">
-                <div class="carro_preco">
-                  <p>R$ 120.000,00</p>
-                </div>
-                <div>
-                  <img src="img/velocimetro.png" alt="velocimetro">
-                  <strong>200.000 KM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="linha_branca"></div>
-            <div class="info_complementares">
-              <div class="ano_carro">
-                <p>2025</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Automatico</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Gasolina</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Ipva pago</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <div class="space"></div>
-
-
-  <section class="veiculo_combina">
-    <article class="site">
-      <div class="texto">
-        <h2>Ache o veículo<span>Perfeito para você</span></h2>
-      </div>
-
-      <div class="lado_a_lado">
-        <div class="procura_carro">
-          <div class="icon_carro">
-            <img src="img/icone_carro.svg" alt="Icoone">
-            <div>
-              <h3>PROCURA UM CARRO ?</h3>
-            </div>
-            <div>
-              <p>Nossos carros são entregues totalmente registrados e com todos os requisitos atendidos. Entregamos seu
-                carro onde você estiver.</p>
-            </div>
-            <div class="inventario_venda">
-              <a href="#">INVENTARIO</a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="vender_carro">
-          <div class="icon_carro">
-            <img src="img/icone_carro_dinheiro.svg" alt="Icoone">
-            <div>
-              <h3>QUER VENDER UM CARRO?</h3>
-            </div>
-            <div>
-              <p>Receba o melhor valor possível pelo seu veículo usado na troca. Nós cuidamos de toda a documentação.
-                Agende uma visita!</p>
-            </div>
-            <div class="inventario_venda">
-              <a href="#">VENDA SEU CARRO</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <div class="space"></div>
-
-
-  <section class="servicos">
-    <article class="site">
-      <div class="lado_a_lado_servico">
-        <div class="servico">
-          <div class="icone_servio">
-            <img src="img/carro_servico.svg" alt="Icone">
-            <h4>AMPLA GAMA DE MARCAS</h4>
-          </div>
-          <div>
-            <p>Com uma seleção robusta de veículos populares disponíveis, bem como modelos líderes da BMW e da Ford,
-              oferecemos opções que atendem a todos os estilos e necessidades — desde o conforto do dia a dia até a
-              performance de alto nível.</p>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="servico">
-          <div class="icone_servio">
-            <img src="img/carro_servico.svg" alt="Icone">
-            <h4>AMPLA GAMA DE MARCAS</h4>
-          </div>
-          <div>
-            <p>Com uma seleção robusta de veículos populares disponíveis, bem como modelos líderes da BMW e da Ford,
-              oferecemos opções que atendem a todos os estilos e necessidades — desde o conforto do dia a dia até a
-              performance de alto nível.</p>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="servico">
-          <div class="icone_servio">
-            <img src="img/carro_servico.svg" alt="Icone">
-            <h4>AMPLA GAMA DE MARCAS</h4>
-          </div>
-          <div>
-            <p>Com uma seleção robusta de veículos populares disponíveis, bem como modelos líderes da BMW e da Ford,
-              oferecemos opções que atendem a todos os estilos e necessidades — desde o conforto do dia a dia até a
-              performance de alto nível.</p>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="servico">
-          <div class="icone_servio">
-            <img src="img/carro_servico.svg" alt="Icone">
-            <h4>AMPLA GAMA DE MARCAS</h4>
-          </div>
-          <div>
-            <p>Com uma seleção robusta de veículos populares disponíveis, bem como modelos líderes da BMW e da Ford,
-              oferecemos opções que atendem a todos os estilos e necessidades — desde o conforto do dia a dia até a
-              performance de alto nível.</p>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <div class="space"></div>
-
-
-  <section class="carros_recentes">
-    <article class="site">
-      <div class="texto">
-        <h2>CARROS <span>RECENTES</span></h2>
-      </div>
-      <p>Nossa seleção de carros mais recentes reúne o que há de melhor em inovação, conforto e desempenho.</p>
-
-      <div class="ca">
-
-      </div>
-      <div class="lado_a_lado_carros_venda_men">
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-
-
-        <div class="carro_venda_menores">
-          <div class="conteudo">
-            <img src="img/carro_menor.png" alt="Carro">
-          </div>
-          <div class="titulo_principal_carro">
-            <h2>Asterion GrandSport Velocity Edition</h2>
-            <div class="km_rodado">
-              <div class="carro_preco">
-                <p>R$ 120.000,00</p>
-              </div>
-              <div>
-                <img src="img/velocimetro.png" alt="velocimetro">
-                <strong>200.000 KM</strong>
-              </div>
-            </div>
-          </div>
-          <div class="linha_branca"></div>
-          <div class="info_complementares">
-            <div class="ano_carro">
-              <p>2025</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Automatico</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Gasolina</p>
-            </div>
-            <div class="info_veiculo_vendas">
-              <p>Ipva pago</p>
-            </div>
-
-
-
-          </div>
-
-          <div class="entre_em_contato">
-            <strong>ENTRE EM CONTATO</strong>
-          </div>
-
-
-
-
-        </div>
-        <a href="">
-          <div class="carro_venda_menores">
-            <div class="conteudo">
-              <img src="img/carro_menor.png" alt="Carro">
-            </div>
-            <div class="titulo_principal_carro">
-              <h2>Asterion GrandSport Velocity Edition</h2>
-              <div class="km_rodado">
-                <div class="carro_preco">
-                  <p>R$ 120.000,00</p>
-                </div>
-                <div>
-                  <img src="img/velocimetro.png" alt="velocimetro">
-                  <strong>200.000 KM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="linha_branca"></div>
-            <div class="info_complementares">
-              <div class="ano_carro">
-                <p>2025</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Automatico</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Gasolina</p>
-              </div>
-              <div class="info_veiculo_vendas">
-                <p>Ipva pago</p>
-              </div>
-
-
-
-            </div>
-
-            <div class="entre_em_contato">
-              <strong>ENTRE EM CONTATO</strong>
-            </div>
-
-
-
-
-          </div>
-        </a>
-
-
-
-
-      </div>
-
-
-
-    </article>
-  </section>
-
-  <div class="space">
-  </div>
-
-  <section class="sonho_realizado">
-    <article class="site">
-      <div class="lado_a_lado">
-        <div class="sonho_realizado_info">
-          <div class="texto_sonho">
-            <h2>SEU SONHO<span>REALIZADO</span></h2>
-            <hr>
-          </div>
-
-          <div class="paragrafo">
-            <p>Transformamos o sonho do seu carro novo em realidade, com segurança, qualidade e as melhores condições do
-              mercado.</p>
-          </div>
-
-          <div class="fale_com_vendedor">
-            <div class="img_pessoa">
-              <img src="img/pessoa_apertando.svg" alt="IMG">
-            </div>
-            <div class="texto">
-              <h4>FALE COM NOSSOS VENDEDORES</h4>
-              <span>Nossos consultores estão preparados para entender sua necessidade e guiá-lo até o carro ideal com
-                atendimento humano, transparente e dedicado.</span>
-            </div>
-          </div>
-          <hr>
-
-          <div class="fale_com_vendedor">
-            <div class="img_pessoa">
-              <img src="img/dinheiro_vendedor.svg" alt="IMG">
-            </div>
-            <div class="texto">
-              <h4>MELHORES CONDIÇOES DE FINANCIAMENTO</h4>
-              <span>Oferecemos as melhores soluções de financiamento para que você conquiste seu carro com tranquilidade
-                e segurança.</span>
-            </div>
-          </div>
+        <div class="texto_bem_vindo">
+          <h3>BEM-VINDO À GARAGE <span>AUTO 7</span>  </h3>
+          <p>Antes de mais nada, queremos dar-lhe as boas-vindas à Loeber Motors. Embora nada substitua a experiência de
+            ver o carro pessoalmente.</p>
+
+          <p>Agradecemos por dedicar seu tempo hoje para visitar nosso site. Nosso objetivo é oferecer a você um tour
+            interativo pelo nosso estoque de veículos novos e usados, além de permitir que você obtenha uma cotação,
+            agende um serviço ou solicite financiamento com facilidade. A busca por um carro de luxo é repleta de
+            grandes expectativas. Sem dúvida, isso tem muito a ver com os veículos que você está considerando, mas na
+            Motors, acreditamos que você também deve ter grandes expectativas em relação à sua concessionária.</p>
 
           <hr>
 
-          <div class="fale_com_vendedor">
-            <div class="img_pessoa">
-              <img src="img/proteçao_cliente.svg" alt="IMG">
-            </div>
-            <div class="texto">
-              <h4>PROTEÇÃO VEICULAR COMPLETA</h4>
-              <span>Garantimos a segurança que seu veículo merece com soluções de proteção veicular completas,
-                acessíveis e sem burocracia.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="foto_destaque">
-          <img src="img/sonho_realizado.png" alt="Imagem">
+          <strong>— MIKEY DIOKLES, Presidente da Motors</strong>
         </div>
       </div>
+
+      <!-- -------------------------------------------------- -->
+
+      <div class="lado_a_lado">
+
+        <div class="texto_bem_vindo">
+          <h4>VALORES FUNDAMENTAIS</h4>
+          <hr class="hr_menor">
+          <p>Passamos por um extenso treinamento de fábrica para que possamos fornecer o conhecimento necessário para
+            que você tome uma decisão informada na escolha do veículo ideal para o seu estilo de vida.</p>
+
+
+          <ul>
+            <li><img src="img/carro_pequeno_preto.svg" alt="Carro Pequeno">Departamento financeiro sem estresse.</li>
+            <li><img src="img/carro_pequeno_amarela.svg" alt="Carro Pequeno">Ampla seleção de veículos populares.</li>
+            <li><img src="img/carro_pequeno_preto.svg" alt="Carro Pequeno">Faça a manutenção do seu carro para garantir
+              sua segurança na estrada.</li>
+            <li><img src="img/carro_pequeno_amarela.svg" alt="Carro Pequeno">Sabemos como lidar com uma ampla gama de
+              serviços automotivos.</li>
+          </ul>
+
+
+
+        </div>
+        <div class="image_carro">
+          <img src="img/carro_bem_vindo_dois.png" alt="carro">
+        </div>
+      </div>
+
     </article>
   </section>
 
+
   <div class="space"></div>
 
-  <section class="conheca_equipe">
-
+  <section class="nossos_servicos">
     <article class="site">
-      <div class="titulo_pricipal">
-        <h2>CONHEÇA <span>NOSSA</span> EQUIPE</h2>
+      <div class="texto">
+        <h3>NOSSOS SERVIÇOS</h3>
         <hr>
-        <p>Nossa equipe é formada por profissionais qualificados, comprometidos em oferecer um atendimento transparente,
-          atencioso e eficiente.</p>
+        <p>Conheça nossos serviços</p>
       </div>
 
-      <div class="colaboradores">
-        <div class="colaborador">
-          <img src="img/colaborador_1.png" alt="colaborador">
-          <h3>Nashid Martines</h3>
-          <p>Diretor</p>
+      <div class="lado_a_lado">
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_carro_sobre.svg" alt="carro_sobre">
+          </div>
+
+          <h3>COMPRA, VENDA E TROCA DE VEÍCULOS</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
         </div>
 
-        <div class="colaborador">
-          <img src="img/colaborador_1.png" alt="colaborador">
-          <h3>Nashid Martines</h3>
-          <p>Diretor</p>
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_sobre_dinheiro.svg" alt="dinheiro">
+          </div>
+
+          <h3>FINANCIAMENTO E CONSÓRCIOS</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
         </div>
 
-        <div class="colaborador">
-          <img src="img/colaborador_1.png" alt="colaborador">
-          <h3>Nashid Martines</h3>
-          <p>Diretor</p>
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_sobre_mecanico.svg" alt="mecanica">
+          </div>
+
+          <h3>GARANTIA ESTENDIDA</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
         </div>
 
-        <div class="colaborador">
-          <img src="img/colaborador_1.png" alt="colaborador">
-          <h3>Nashid Martines</h3>
-          <p>Diretor</p>
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_laudo_sobre.svg" alt="Laudo">
+          </div>
+
+          <h3>VISTORIA E LAUDOS</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
         </div>
 
 
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_chave_sobre.svg" alt="chave">
+          </div>
+
+          <h3>MECÂNICA LEVE</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
+        </div>
+
+
+        <div class="servicos">
+
+
+          <div class="servico_sobre">
+            <img src="img/servico_sobre_protecao.svg" alt="chave">
+          </div>
+
+          <h3>SEGURO AUTOMOTIVO</h3>
+          <p>Sabemos como lidar com uma ampla gama de serviços automotivos.</p>
+        </div>
+
+      </div>
+
+    </article>
+  </section>
+
+
+
+  <section class="resultados_sobre">
+    <article class="site">
+      <div class="lado_a_lado">
+        <div class="div_resultado">
+          <div class="resultado">
+            <img src="img/resultado_carro.svg" alt="Carro">
+          </div>
+          <h5>125</h5>
+          <p>Carros vendidos</p>
+        </div>
+
+
+        <div class="div_resultado">
+          <div class="resultado">
+            <img src="img/resultado_pessoas.svg" alt="Carro">
+          </div>
+          <h5>125</h5>
+          <p>Clientes atendidos</p>
+        </div>
+
+
+        <div class="div_resultado">
+          <div class="resultado">
+            <img src="img/resultado_banco.svg" alt="Carro">
+          </div>
+          <h5>125</h5>
+          <p>Carros financiados</p>
+        </div>
+
+
+      </div>
+
+    </article>
+  </section>
+
+
+
+  <section class="carrosel_carros_sobre">
+    <article class="site">
+      <div class="texto">
+        <h3>NOSSOS CARROS</h3>
+        <hr>
+        <p>Conheça nossa galeria de carros</p>
+      </div>
+      <div class="lado_a_lado">
+        <div class="carrosel_carros">
+
+
+          <div>
+            <img src="img/nosso_carrp_sobre_um.png" alt="Carro">
+          </div>
+
+          <div>
+            <img src="img/nosso_carrp_sobre_dois.png" alt="Carro">
+          </div>
+
+          <div>
+            <img src="img/nosso_carrp_sobre_tres.png" alt="Carro">
+          </div>
+
+
+          <div>
+            <img src="img/nosso_carrp_sobre_dois.png" alt="Carro">
+          </div>
+
+          <div>
+            <img src="img/nosso_carrp_sobre_tres.png" alt="Carro">
+          </div>
+
+          <div>
+            <img src="img/nosso_carrp_sobre_um.png" alt="Carro">
+          </div>
+
+        </div>
       </div>
     </article>
   </section>
 
+  <div class="space"></div>
+
+
+
+  <section class="fotos">
+    <article class="site">
+      <div class="lado_a_lado">
+        <div class="foto_maior">
+          <img src="img/foto_maior.png" alt="foto">
+        </div>
+
+        <div class="foto_padrao">
+          <img src="img/foto_equipe_um.png" alt="foto">
+        </div>
+
+        <div class="foto_padrao">
+          <img src="img/foto_equipe_dois.png" alt="foto">
+        </div>
+
+         <div class="foto_padrao">
+          <img src="img/foto_equipe_tres.png" alt="foto">
+        </div>
+
+        
+         <div class="foto_padrao">
+          <img src="img/foto_equipe_quatro.png" alt="foto">
+        </div>
+
+      
+      </div>
+    </article>
+  </section>
+
+  <div class="space"></div>
 
   <footer>
 
@@ -1079,16 +366,16 @@
 
         </div>
 
-       <nav>
-  <strong>MENU</strong>
-  <ul>
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="sobre.html">SOBRE-NOS</a></li>
-    <li><a href="contato.html">CONTATO</a></li>
-    <li><a href="procurar.html">PROCURAR</a></li>
-  </ul>
-</nav>
+        <nav>
+          <strong>MENU</strong>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE-NOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="procurar.html">PROCURAR</a></li>
+          </ul>
 
+        </nav>
 
 
         <div class="redes_footer">
@@ -1126,29 +413,71 @@
     </div>
   </footer>
 
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- JS ÚNICO -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+  <script src="js/slick_sobre.js"></script>
 
-    const linksMenu = document.querySelectorAll('nav ul li a');
+  <script src="js/menu_suspenso.js"></script>
 
-    let paginaAtual = window.location.pathname.split('/').pop();
+  <!-- SLICK -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    if (paginaAtual === '') {
-      paginaAtual = 'index.html';
+  <!-- SEU JS -->
+  <script src="js/carrosel.js"></script>
+  <script src="js/slick_carros.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const linksMenu = document.querySelectorAll('nav ul li a');
+
+      let paginaAtual = window.location.pathname.split('/').pop();
+
+      if (paginaAtual === '') {
+        paginaAtual = 'index.html';
+      }
+
+      linksMenu.forEach(link => {
+        const href = link.getAttribute('href');
+
+        if (href === paginaAtual) {
+          link.classList.add('active');
+        }
+      });
+
+    });
+  </script>
+
+
+  <script>
+    const track = document.querySelector('.marcas-track');
+
+    // Duplica os itens para criar o loop infinito
+    track.innerHTML += track.innerHTML;
+
+    let position = 0;
+    const speed = 0.3; // quanto menor, mais devagar
+
+    function animate() {
+      position -= speed;
+
+      // quando andar metade, volta para o início
+      if (Math.abs(position) >= track.scrollWidth / 2) {
+        position = 0;
+      }
+
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(animate);
     }
 
-    linksMenu.forEach(link => {
-      const href = link.getAttribute('href');
+    animate();
+  </script>
 
-      if (href === paginaAtual) {
-        link.classList.add('active');
-      }
-    });
 
-  });
-</script>
+
+
+
 
 
 
