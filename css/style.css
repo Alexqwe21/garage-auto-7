@@ -1058,9 +1058,10 @@ nav ul {
 
 
 
+/* PAGINA SOBRE  */
 
-
-.banner_sobre {
+.banner_sobre,
+.banner_contato {
   background-image: url(../img/banner_sobre.png);
   background-position: top center;
 
@@ -1357,6 +1358,248 @@ nav ul {
     }
   }
 }
+
+
+
+/*  FIM PAGINA SOBRE  */
+
+
+
+/* PAGINA CONTATO */
+
+.banner_contato {
+  background-image: url(../img/banner_contato.png);
+}
+
+
+.contate_nos {
+  .site {
+    .texto_contato {
+      h2 {
+        font-size: 70px;
+        font-style: italic;
+        font-weight: bold;
+        color: var(--cor-primaria);
+        letter-spacing: 25px;
+      }
+
+      hr {
+        width: 100%;
+        border: 2px solid var(--cor-primaria);
+      }
+    }
+
+    .lado_a_lado {
+      .info_contato {
+        width: 35%;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 16px;
+          font-weight: normal;
+          margin-top: 20px;
+          line-height: 25px;
+        }
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 25px;
+        }
+
+        strong {
+          font-size: 40px;
+          font-style: italic;
+          font-weight: bold;
+
+          span {
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--cor-primaria);
+            margin-left: 15px;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          margin: 0 10px;
+          color: black;
+          font-weight: bold;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+
+        .redes_lado_footer {
+          display: flex;
+          margin-bottom: 40px;
+        }
+
+      }
+
+
+      display: flex;
+      justify-content: center;
+      padding: 60px 0;
+
+      .formulario {
+        background: #f7ebcc;
+        padding: 30px;
+        border-radius: 20px;
+        width: 800px;
+        max-width: 95%;
+
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .linha-inputs {
+            display: flex;
+            gap: 20px;
+
+            input {
+              flex: 1;
+              padding: 15px;
+              border-radius: 8px;
+              border: none;
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 14px;
+              text-transform: uppercase;
+              outline: none;
+
+              &::placeholder {
+                color: #000;
+                font-weight: bold;
+              }
+            }
+          }
+
+          textarea {
+            height: 180px;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            resize: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            outline: none;
+
+            &::placeholder {
+              color: #000;
+              font-weight: bold;
+            }
+          }
+
+          .botao {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+              padding: 12px 40px;
+              border-radius: 6px;
+              background: #fff;
+              border: 2px solid #000;
+              font-weight: bold;
+              cursor: pointer;
+              transition: 0.3s;
+
+              &:hover {
+                background: #000;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+.mapa {
+
+  iframe {
+    width: 100% !important;
+  }
+}
+
+
+
+
+/*  FIM PAGINA CONTATO */
+
+
+
+
+/*  AQUI COMEÇA A PAGINA  ERRO 404 */
+
+.banner_404 {
+  height: 650px;
+  background-image: url(../img/banner_erro_404.png);
+
+
+
+  .titulo_pagina_atual {
+    .site {
+      .secao_titulo {
+        align-items: center;
+        height: 580px;
+
+        .titulo {
+          h4 {
+            font-size: 55px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bolder;
+            line-height: 70px;
+          }
+        }
+
+        .secao_atual {
+          strong {
+            font-size: 180px;
+            font-style: italic;
+            letter-spacing: 60px;
+            font-weight: bold;
+          }
+        }
+
+        .hr_div {
+          width: 50%;
+
+          hr {
+            width: 100%;
+          }
+        }
+
+        a {
+          display: flex;
+          margin-top: 20px;
+          background-color: #DCDCDC;
+          padding: 20px;
+          border-radius: 10px;
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/*  AQUI TERMINA A PAGINA  ERRO 404 */
 
 
 footer {
@@ -1665,6 +1908,71 @@ footer {
     }
   }
 
+
+
+  /* AQUI TERMINA O RESPONSIVO SOBRE */
+
+
+  /* AQUI COMEÇA O RESPONSIVO CONTATO*/
+
+  .contate_nos {
+    & .site {
+      .texto_contato {
+        h2 {
+          text-align: center;
+        }
+      }
+
+      & .lado_a_lado {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+
+        .info_contato {
+          width: 90%;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+
+  /* AQUI TERMINA O RESPONSIVO CONTATO */
+
+
+
+  /* AQUI COMEÇA  O RESPONSIVO ERRO 404 */
+
+  .banner_404 {
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          & .secao_atual {
+            strong {
+              font-size: 160px;
+
+            }
+
+            
+          }
+          .titulo {
+              h4 {
+                font-size: 40px;
+              }
+
+            }
+        }
+      }
+    }
+  }
+
+  /* AQUI TERMINA  O RESPONSIVO ERRO 404 */
+
+
+
+
 }
 
 
@@ -1871,6 +2179,23 @@ footer {
       }
     }
   }
+
+
+  /* AQUI COMEÇA O RESPONSIVO CONTATO*/
+
+  .contate_nos {
+    & .site {
+      & .texto_contato {
+        h2 {
+          text-align: center;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+
+  /* AQUI TERMINA O RESPONSIVO CONTATO */
 
 
 
@@ -2085,6 +2410,11 @@ footer {
 
 
   .sonho_realizado {
+
+    hr {
+      width: 100%;
+    }
+
     & .site {
       & .lado_a_lado {
 
@@ -2164,7 +2494,7 @@ footer {
           }
         }
 
-        .texto_bem_vindo{
+        .texto_bem_vindo {
           padding: 10px;
         }
 
@@ -2173,38 +2503,119 @@ footer {
   }
 
 
-  .nossos_servicos, .carrosel_carros_sobre {
+  .nossos_servicos,
+  .carrosel_carros_sobre {
     & .site {
-      .texto{
-     
-           h3{
-            font-size: 30px !important;
-           }
-        
-      }
-        & .lado_a_lado {
-          
-          padding: 10px;
-         
-            .servicos {
-                width: 100%;
-            }
-        }
-    }
-}
+      .texto {
 
-  .fotos{
-    .site{
-      .lado_a_lado{
-        .foto_maior{
+        h3 {
+          font-size: 30px !important;
+        }
+
+      }
+
+      & .lado_a_lado {
+
+        padding: 10px;
+
+        .servicos {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .fotos {
+    .site {
+      .lado_a_lado {
+        .foto_maior {
           padding: 10px;
         }
-        img{
+
+        img {
           width: 100% !important;
         }
       }
     }
   }
+
+
+  /* AQUI COMEÇA O RESPONSIVO CONTATO*/
+
+  .contate_nos {
+    & .site {
+      & .texto_contato {
+        h2 {
+          text-align: center;
+          font-size: 20px;
+          letter-spacing: 15px;
+        }
+      }
+    }
+  }
+
+
+  .contate_nos {
+    & .site {
+      & .lado_a_lado {
+
+        & .formulario {
+          & form {
+            .linha-inputs {
+              display: flex;
+              gap: 20px;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .info_contato {
+    strong {
+      font-size: 30px !important;
+
+      span {
+        font-size: 30px !important;
+      }
+    }
+  }
+
+
+  /* AQUI TERMINA O RESPONSIVO CONTATO */
+
+  /* AQUI COMEÇA  O RESPONSIVO ERRO 404 */
+
+  .banner_404 {
+    height: 660px;
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          & .secao_atual {
+            height: 480px !important;
+            strong {
+              font-size: 70px;
+
+            }
+
+            
+          }
+          .titulo {
+              h4 {
+                font-size: 20px;
+              }
+
+            }
+        }
+      }
+    }
+  }
+
+  /* AQUI TERMINA  O RESPONSIVO ERRO 404 */
+
+
 
 
 
