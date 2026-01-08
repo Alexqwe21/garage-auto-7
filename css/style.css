@@ -2165,9 +2165,43 @@ footer {
         }
 
         .texto_bem_vindo{
-          
+          padding: 10px;
         }
 
+      }
+    }
+  }
+
+
+  .nossos_servicos, .carrosel_carros_sobre {
+    & .site {
+      .texto{
+     
+           h3{
+            font-size: 30px !important;
+           }
+        
+      }
+        & .lado_a_lado {
+          
+          padding: 10px;
+         
+            .servicos {
+                width: 100%;
+            }
+        }
+    }
+}
+
+  .fotos{
+    .site{
+      .lado_a_lado{
+        .foto_maior{
+          padding: 10px;
+        }
+        img{
+          width: 100% !important;
+        }
       }
     }
   }
