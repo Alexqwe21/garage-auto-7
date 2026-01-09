@@ -1595,11 +1595,147 @@ nav ul {
   }
 }
 
-
-
-
-
 /*  AQUI TERMINA A PAGINA  ERRO 404 */
+
+
+
+/*  AQUI COMEÇA  A PAGINA  PROCURAR*/
+
+.banner_procurar {
+  background-image: url(../img/banner_procurar.png);
+  height: 600px;
+}
+
+
+.procurar_veiculo {
+  background-color: #dcdcdc30;
+  padding: 30px 0;
+
+
+
+  .form_filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .linha_filtros {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    select {
+      width: 180px;
+      height: 40px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .limpar_filtro {
+      width: 150px;
+      height: 41px;
+      border-radius: 7px;
+      border: 2px solid #000;
+      background-color: #e9bf5b70;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .barra_resultados {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 3px solid #e9bf5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .abas {
+      display: flex;
+      gap: 20px;
+      font-weight: bold;
+
+      span {
+        cursor: pointer;
+        padding-bottom: 5px;
+      }
+
+      .ativo {
+        border-bottom: 3px solid #e9bf5b;
+      }
+    }
+
+    .busca {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 400px;
+
+      input {
+        height: 38px;
+        padding: 0 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        width: 100%;
+      }
+
+      .btn_busca {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.procurar_carros {
+
+  option {
+    text-transform: uppercase;
+  }
+
+  .site {
+    .recentes_filtro {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      strong {
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .form_filtros {
+        .linha_filtros {
+          .texto {
+            h4 {
+              font-size: 15px;
+              font-weight: bold;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*  AQUI TERMINA  A PAGINA  PROCURAR*/
 
 
 footer {
@@ -1955,20 +2091,51 @@ footer {
 
             }
 
-            
-          }
-          .titulo {
-              h4 {
-                font-size: 40px;
-              }
 
+          }
+
+          .titulo {
+            h4 {
+              font-size: 40px;
             }
+
+          }
         }
       }
     }
   }
 
   /* AQUI TERMINA  O RESPONSIVO ERRO 404 */
+
+
+
+  /* AQUI COMEÇA   O RESPONSIVO PROCURAR */
+
+
+  .procurar_veiculo {
+    .site {
+      padding: 10px;
+
+      .form_filtros {
+        select {
+          width: 170px;
+        }
+      }
+    }
+  }
+
+  .procurar_carros {
+    .site {
+      .lado_a_lado_carros_venda_men {
+        padding: 10px;
+      }
+    }
+  }
+
+
+
+
+  /* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
 
 
 
@@ -2198,35 +2365,62 @@ footer {
   /* AQUI TERMINA O RESPONSIVO CONTATO */
 
 
+  /* AQUI COMEÇA   O RESPONSIVO PROCURAR */
 
 
-  footer {
-    height: 440px;
+  .procurar_veiculo {
+    & .form_filtros {
+      .linha_filtros {
+        justify-content: center;
+      }
+    }
+  }
 
+
+  .procurar_carros {
     & .site {
-      & .lado_a_lado {
-        nav {
-          display: none;
-        }
+      .lado_a_lado_carros_venda_men {
+        padding: 55px;
+      }
+    }
+  }
+}
 
-        .info_logo {
-          .telefone_footer {
-            margin-top: 15px;
 
-            .numero_footer {
-              p {
-                font-size: 19px;
-              }
+
+
+/* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
+
+
+
+
+footer {
+  height: 440px;
+
+  & .site {
+    & .lado_a_lado {
+      nav {
+        display: none;
+      }
+
+      .info_logo {
+        .telefone_footer {
+          margin-top: 15px;
+
+          .numero_footer {
+            p {
+              font-size: 19px;
             }
           }
         }
       }
     }
   }
-
-
-
 }
+
+
+
+
 
 
 @media (max-width: 480px) {
@@ -2590,24 +2784,27 @@ footer {
 
   .banner_404 {
     height: 660px;
+
     & .titulo_pagina_atual {
       & .site {
         & .secao_titulo {
           & .secao_atual {
             height: 480px !important;
+
             strong {
               font-size: 70px;
 
             }
 
-            
-          }
-          .titulo {
-              h4 {
-                font-size: 20px;
-              }
 
+          }
+
+          .titulo {
+            h4 {
+              font-size: 20px;
             }
+
+          }
         }
       }
     }
@@ -2615,50 +2812,82 @@ footer {
 
   /* AQUI TERMINA  O RESPONSIVO ERRO 404 */
 
+  .procurar_veiculo {
+    .barra_resultados {
+      flex-direction: column;
+      gap: 20px;
+
+      .busca {
+        justify-content: center;
+        width: 100%;
+
+        input {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .recentes_filtro {
+
+    flex-direction: column;
+    gap: 22px;
+  }
 
 
-
-
-  footer {
-    height: auto;
-
+  .procurar_carros {
     & .site {
-      & .lado_a_lado {
-        flex-direction: column;
-        gap: 30px;
+      .lado_a_lado_carros_venda_men {
+        padding: 55px;
+        justify-content: center;
+      }
+    }
+  }
+}
 
-        .info_logo {
+
+/* AQUI COMEÇA   O RESPONSIVO PROCURAR */
+
+
+footer {
+  height: auto;
+
+  & .site {
+    & .lado_a_lado {
+      flex-direction: column;
+      gap: 30px;
+
+      .info_logo {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        p {
+          margin: 10px 5px;
+        }
+      }
+
+      .redes_footer {
+        width: 100%;
+
+        .loca {
           width: 100%;
-          justify-content: center;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           text-align: center;
 
-          p {
-            margin: 10px 5px;
-          }
-        }
+          div {
+            padding: 10px;
+            margin-top: 0px;
 
-        .redes_footer {
-          width: 100%;
-
-          .loca {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            div {
-              padding: 10px;
-              margin-top: 0px;
-
-              p {
-                margin-left: 5px;
-              }
+            p {
+              margin-left: 5px;
             }
           }
         }
@@ -2666,3 +2895,11 @@ footer {
     }
   }
 }
+
+
+
+
+
+
+
+/* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
