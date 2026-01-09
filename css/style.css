@@ -1742,6 +1742,12 @@ footer {
   height: 380px;
   background-color: #000000;
 
+
+  nav{
+    display: block !important;
+    
+  }
+
   .site {
     .space {
       height: 50px;
@@ -2384,18 +2390,13 @@ footer {
       }
     }
   }
-}
-
-
-
-
-/* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
-
-
-
 
 footer {
   height: 440px;
+  nav{
+    display: none !important;
+    
+  }
 
   & .site {
     & .lado_a_lado {
@@ -2417,6 +2418,19 @@ footer {
     }
   }
 }
+
+
+}
+
+
+
+
+/* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
+
+
+
+
+
 
 
 
@@ -2843,13 +2857,9 @@ footer {
       }
     }
   }
-}
 
 
-/* AQUI COMEÇA   O RESPONSIVO PROCURAR */
-
-
-footer {
+  footer {
   height: auto;
 
   & .site {
@@ -2895,6 +2905,13 @@ footer {
     }
   }
 }
+}
+
+
+/* AQUI COMEÇA   O RESPONSIVO PROCURAR */
+
+
+
 
 
 
