@@ -1738,14 +1738,79 @@ nav ul {
 /*  AQUI TERMINA  A PAGINA  PROCURAR*/
 
 
+
+/*  AQUI COMEÇA   A PAGINA  INFO VEICULO*/
+
+.banner_info_veiculo {
+  background-image: url(../img/banner_info_veiculo.png);
+  background-position: right center;
+}
+
+
+.info_veiculos {
+  .site {
+    .slick_ajustes {
+      display: flex;
+      flex-direction: column;
+      
+      .slider-for,
+      .slider-nav {
+        width: 56% !important;
+      }
+
+      .slider-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 48% !important;
+        margin-top: 30px;
+        img{
+          cursor: pointer;
+        }
+      }
+
+      .info_descricao{
+        width: 50%;
+        h2{
+          margin: 20px 0;
+          font-size: 20px;
+          font-style: italic;
+          font-weight: bolder;
+        }
+
+        p{
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+      hr{
+        width: 45%;
+        border: 2px solid var(--cor-primaria);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*  AQUI TERMINA   A PAGINA  INFO VEICULO*/
+
 footer {
   height: 380px;
   background-color: #000000;
 
 
-  nav{
+  nav {
     display: block !important;
-    
+
   }
 
   .site {
@@ -2391,33 +2456,34 @@ footer {
     }
   }
 
-footer {
-  height: 440px;
-  nav{
-    display: none !important;
-    
-  }
+  footer {
+    height: 440px;
 
-  & .site {
-    & .lado_a_lado {
-      nav {
-        display: none;
-      }
+    nav {
+      display: none !important;
 
-      .info_logo {
-        .telefone_footer {
-          margin-top: 15px;
+    }
 
-          .numero_footer {
-            p {
-              font-size: 19px;
+    & .site {
+      & .lado_a_lado {
+        nav {
+          display: none;
+        }
+
+        .info_logo {
+          .telefone_footer {
+            margin-top: 15px;
+
+            .numero_footer {
+              p {
+                font-size: 19px;
+              }
             }
           }
         }
       }
     }
   }
-}
 
 
 }
@@ -2860,51 +2926,51 @@ footer {
 
 
   footer {
-  height: auto;
+    height: auto;
 
-  & .site {
-    & .lado_a_lado {
-      flex-direction: column;
-      gap: 30px;
-
-      .info_logo {
-        width: 100%;
-        justify-content: center;
-        display: flex;
+    & .site {
+      & .lado_a_lado {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        gap: 30px;
 
-        p {
-          margin: 10px 5px;
-        }
-      }
-
-      .redes_footer {
-        width: 100%;
-
-        .loca {
+        .info_logo {
           width: 100%;
+          justify-content: center;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           text-align: center;
 
-          div {
-            padding: 10px;
-            margin-top: 0px;
+          p {
+            margin: 10px 5px;
+          }
+        }
 
-            p {
-              margin-left: 5px;
+        .redes_footer {
+          width: 100%;
+
+          .loca {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            div {
+              padding: 10px;
+              margin-top: 0px;
+
+              p {
+                margin-left: 5px;
+              }
             }
           }
         }
       }
     }
   }
-}
 }
 
 
