@@ -1749,57 +1749,245 @@ nav ul {
 
 .info_veiculos {
   .site {
-    .slick_ajustes {
-      display: flex;
-      flex-direction: column;
-      
-      .slider-for,
-      .slider-nav {
-        width: 56% !important;
-      }
+    .hr_ponto {
+      width: 100% !important;
+    }
 
-      .slider-nav {
+    .lado_a_lado {
+      align-items: start;
+      gap: 30px;
+
+      .slick_ajustes {
         display: flex;
-        justify-content: space-between;
-        width: 48% !important;
-        margin-top: 30px;
-        img{
-          cursor: pointer;
-        }
-      }
-
-      .info_descricao{
+        flex-direction: column;
         width: 50%;
-        h2{
-          margin: 20px 0;
-          font-size: 20px;
-          font-style: italic;
-          font-weight: bolder;
+
+        .slick-prev:before,
+        .slick-next:before {
+          color: var(--cor-primaria);
         }
 
-        p{
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 25px;
+        .slider-nav {
+          display: flex;
+          justify-content: space-between;
+          width: 100% !important;
+          margin-top: 30px;
+
+          img {
+            cursor: pointer;
+          }
+        }
+
+        .info_descricao {
+          padding: 10px;
+
+          h2 {
+            margin: 20px 0;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bolder;
+          }
+
+          p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+          }
+
+
+
+        }
+
+        .info_caracteristicas {
+          .lado_a_lado {
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+
+            .texto {
+              h3 {
+                font-size: 25px;
+                font-weight: bold;
+                font-style: italic;
+
+              }
+            }
+
+            .quad_carac {
+              width: 560px;
+              height: auto;
+              background-color: #F5F5F5;
+              border-radius: 5px;
+              border: 2px solid black;
+              flex-wrap: wrap;
+              display: flex;
+              padding: 20px;
+              gap: 15px;
+              justify-content: center;
+
+              .info_pontos {
+                padding: 5px;
+                width: auto;
+                height: 30px;
+                background: white;
+                border-radius: 5px;
+                border: 2px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                  margin-right: 10px;
+                }
+              }
+            }
+
+          }
+
+        }
+
+
+      }
+
+      .titulo_veiculo {
+        strong {
+          font-size: 30px;
+          font-weight: bold;
+          font-style: italic;
+
+        }
+
+        .ano_tipo_veiculo {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          .bola_amarela {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: var(--cor-primaria);
+            margin: 0 5px;
+            padding: 0;
+          }
+
+          div {
+            width: auto;
+            padding: 10px;
+            height: 30px;
+            background-color: black;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+              color: white;
+              font-size: 15px;
+              font-weight: bolder;
+            }
+          }
+
+          .km {
+            background-color: transparent;
+
+            p {
+              color: black;
+              font-size: 15px;
+              font-weight: bolder;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+
+        span {
+          font-size: 35px;
+          font-weight: bold;
+          font-style: italic;
+          margin-top: 25px;
+          display: flex;
+
+        }
+
+        .info_completa {
+          width: 100%;
+          background-color: #F5F5F5;
+          border: 2px solid black;
+          height: auto;
+          border-radius: 5px;
+          padding: 10px;
+
+          .info_completa_des {
+            hr {
+              border: 1px solid var(--cor-primaria);
+            }
+
+            .desc_lado {
+              display: flex;
+              justify-content: start;
+              gap: 15px;
+              margin-top: 10px;
+
+              h4,
+              h5 {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                margin-top: 20px;
+              }
+            }
+
+          }
+        }
+
+        .wpp {
+          width: 100%;
+          display: flex;
+          height: 50px;
+          background-color: #05CD51;
+          border-radius: 5px;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          font-style: italic;
+
+          img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+          }
+        }
+
+        .tel {
+          background-color: transparent;
+          border: 2px solid var(--cor-primaria);
+          color: #000000;
+          letter-spacing: 10px;
+        }
+
+        iframe {
+          margin-top: 30px;
+          border-radius: 10px;
         }
       }
-      hr{
-        width: 45%;
-        border: 2px solid var(--cor-primaria);
-      }
+
+    }
+
+    hr {
+      width: 100% !important;
+      border: 2px solid var(--cor-primaria);
     }
   }
 }
-
-
-
-
-
-
-
-
-
 
 /*  AQUI TERMINA   A PAGINA  INFO VEICULO*/
 
@@ -2206,7 +2394,98 @@ footer {
 
 
 
-  /* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
+  /* AQUI   TERMINAR RESPONSIVO PROCURAR */
+
+
+  /* AQUI COMEÇA    RESPONSIVO INFO VEICULO */
+
+  .banner_info_veiculo {
+    height: 450px;
+
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          height: 300px;
+
+          & .titulo {
+            h4 {
+              font-size: 65px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .info_veiculos {
+    & .site {
+      .lado_a_lado {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        .slick_ajustes {
+          width: 90%;
+          display: flex;
+
+          img {
+            width: 80%;
+          }
+
+        }
+
+        .slider-nav {
+
+          img {
+            width: 80%;
+          }
+
+
+        }
+
+        .slick-initialized .slick-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .quad_carac {
+          width: 100% !important;
+
+          img {
+            width: 10px;
+          }
+        }
+
+        .titulo_veiculo {
+          width: 90%;
+
+          strong {
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 25px;
+          }
+
+          .ano_tipo_veiculo {
+            justify-content: space-evenly;
+          }
+        }
+
+        Iframe {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+
+
+
+  /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
 
 
 
@@ -2484,6 +2763,36 @@ footer {
       }
     }
   }
+
+
+  /* AQUI COMEÇA    RESPONSIVO INFO VEICULO */
+
+  .banner_info_veiculo {
+    height: 450px;
+
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          height: 300px;
+
+          & .titulo {
+            h4 {
+              font-size: 45px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+  /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
 
 
 }
@@ -2923,6 +3232,85 @@ footer {
       }
     }
   }
+
+
+  /* AQUI COMEÇA    RESPONSIVO INFO VEICULO */
+
+  .banner_info_veiculo {
+    height: 400px;
+
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          height: 300px;
+
+          & .titulo {
+            h4 {
+              font-size: 35px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .info_veiculos {
+    & .site {
+       hr{
+            margin-top: 5px;
+          }
+      & .lado_a_lado {
+        & .slick_ajustes {
+          & .info_caracteristicas {
+            & .lado_a_lado {
+              & .quad_carac {
+                .info_pontos {
+                  text-align: center;
+                  height: 45px;
+
+                }
+              }
+
+              .texto {
+                width: 100%;
+                text-align: center;
+
+              }
+
+            }
+
+          }
+
+        }
+
+        .ano_tipo_veiculo {
+          flex-wrap: wrap !important;
+          div{
+            margin-bottom: 10px;
+          }
+         
+        }
+      }
+      .tel{
+        letter-spacing: 5px !important;
+      }
+
+.desc_lado{
+  h4,h5{
+font-size: 18px !important;
+  }
+}
+
+      
+    }
+  }
+
+
+
+
+  /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
 
 
   footer {
