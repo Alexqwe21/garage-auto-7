@@ -4,21 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/reset.css">
-  <title>GARAGE AUTO 7 </title>
-  <link rel="shortcut icon" href="img/logo_garage.svg" type="image/x-icon">
-  <!-- Slick CSS -->
 
-  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- CSS com versionamento -->
+  <link rel="stylesheet" href="/css/reset.css?v=1.0.3">
+  <link rel="stylesheet" href="/css/style.css?v=1.0.3">
+
+  <title>GARAGE AUTO 7</title>
+
+  <link rel="shortcut icon" href="img/logo_garage.svg?v=1.0.0" type="image/x-icon">
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css?v=1.8.1" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css?v=1.8.1" />
+
+  <!-- Slick via CDN -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
 </head>
 
+
 <body>
+
+
+   <button id="back-to-top" title="Voltar para o Topo"><img src="img/seta_para_cima.svg" alt="seta"></button>
+
+
+  <a href="https://api.whatsapp.com/send?phone=5511912345494" target="_blank" class="whatsapp-fixo"
+    aria-label="Fale conosco pelo WhatsApp">
+    <img src="img/whatsapp_Flutuante.svg" alt="WhatsApp" />
+  </a>
+
 
   <div class="banner_home banner_sobre banner_contato banner_procurar banner_info_veiculo banner_login">
     <header>
@@ -202,6 +219,9 @@
 
     });
   </script>
+
+
+ <script src="js/back-to-top.js"></script>
 
 
 </body>
