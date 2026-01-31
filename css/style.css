@@ -1991,6 +1991,117 @@ nav ul {
 
 /*  AQUI TERMINA   A PAGINA  INFO VEICULO*/
 
+
+/*  AQUI COMEÇA  A PAGINA  LOGIN*/
+
+.banner_login {
+  background-image: none;
+  height: 92px;
+
+  header {
+    background-color: black;
+  }
+}
+
+.login_carro {
+
+  .site {
+    max-width: 1350px;
+
+    .login {
+
+
+      .forms {
+        background-color: #DCDCDC30;
+
+        h2 {
+          font-size: 30px;
+
+
+        }
+
+        p {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 15px;
+          margin-top: 10px;
+          margin-bottom: 31px;
+        }
+
+        .lado_a_lado_login {
+
+          display: flex;
+
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            padding-left: 23px;
+
+            input {
+              width: 70%;
+              height: 40px;
+              margin-bottom: 12px;
+              border: 2px solid black;
+              border-radius: 5px;
+            }
+
+            label {
+              width: 25%;
+              margin-bottom: 12px;
+            }
+
+            .entrar {
+              width: 40%;
+              cursor: pointer;
+              height: 40px;
+              background-color: var(--cor-primaria);
+              border: none;
+              color: white;
+              font-weight: bold;
+              text-transform: uppercase;
+              font-size: 15px;
+
+              border-radius: 5px;
+            }
+          }
+
+          .destaque_login {
+            background-image: url(../img/destaque_login.png);
+            height: 410px;
+            background-repeat: no-repeat;
+            width: 800px;
+
+            .texto {
+              height: 410px;
+              padding: 30px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+
+              h3 {
+                color: white;
+                font-size: 70px;
+              }
+
+              hr {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+/*  AQUI TERMINA  A PAGINA  LOGIN*/
+
+
+
 footer {
   height: 380px;
   background-color: #000000;
@@ -2481,15 +2592,14 @@ footer {
       }
     }
   }
-
-
-
-
   /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
 
 
-
-
+/*  AQUI COMEÇA  A PAGINA  LOGIN*/
+.banner_login {
+  height: 90px;
+}
+/*  AQUI TERMINA  A PAGINA  LOGIN*/
 }
 
 
@@ -2735,6 +2845,66 @@ footer {
     }
   }
 
+
+  /* AQUI COMEÇA    RESPONSIVO INFO VEICULO */
+
+  .banner_info_veiculo {
+    height: 450px;
+
+    & .titulo_pagina_atual {
+      & .site {
+        & .secao_titulo {
+          height: 300px;
+
+          & .titulo {
+            h4 {
+              font-size: 45px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
+
+
+  /*  AQUI COMEÇA  A PAGINA  LOGIN*/
+.banner_login {
+  height: 90px;
+}
+
+.login_carro {
+    & .site {
+        & .login {
+            & .forms {
+                & .lado_a_lado_login {
+                  flex-direction: column;
+                  .destaque_login{
+                  width: 100%;
+                  }
+                    form {
+                       order: 1;
+                       width: 100%;
+                       padding-left: 0;
+                       margin: 20px 0;
+                       align-items: center;
+                       label {
+                         width: 70%;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*  AQUI TERMINA  A PAGINA  LOGIN*/
+
+
   footer {
     height: 440px;
 
@@ -2765,34 +2935,6 @@ footer {
   }
 
 
-  /* AQUI COMEÇA    RESPONSIVO INFO VEICULO */
-
-  .banner_info_veiculo {
-    height: 450px;
-
-    & .titulo_pagina_atual {
-      & .site {
-        & .secao_titulo {
-          height: 300px;
-
-          & .titulo {
-            h4 {
-              font-size: 45px;
-
-            }
-          }
-        }
-      }
-    }
-  }
-
-
-
-
-
-
-
-  /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
 
 
 }
@@ -3258,9 +3400,10 @@ footer {
 
   .info_veiculos {
     & .site {
-       hr{
-            margin-top: 5px;
-          }
+      hr {
+        margin-top: 5px;
+      }
+
       & .lado_a_lado {
         & .slick_ajustes {
           & .info_caracteristicas {
@@ -3287,30 +3430,63 @@ footer {
 
         .ano_tipo_veiculo {
           flex-wrap: wrap !important;
-          div{
+
+          div {
             margin-bottom: 10px;
           }
-         
+
         }
       }
-      .tel{
+
+      .tel {
         letter-spacing: 5px !important;
       }
 
-.desc_lado{
-  h4,h5{
-font-size: 18px !important;
-  }
-}
+      .desc_lado {
 
-      
+        h4,
+        h5 {
+          font-size: 18px !important;
+        }
+      }
+
+
     }
   }
 
-
-
-
   /* AQUI TERMINA    RESPONSIVO INFO VEICULO */
+
+
+  /*  AQUI COMEÇA  A PAGINA  LOGIN*/
+.banner_login {
+  height: 90px;
+}
+
+.login_carro {
+    & .site {
+        & .login {
+            & .forms {
+                & .lado_a_lado_login {
+                    & .destaque_login {
+                        & .texto {
+                            h3 {
+                            
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*  AQUI TERMINA  A PAGINA  LOGIN*/
+
+
 
 
   footer {
@@ -3360,17 +3536,3 @@ font-size: 18px !important;
     }
   }
 }
-
-
-/* AQUI COMEÇA   O RESPONSIVO PROCURAR */
-
-
-
-
-
-
-
-
-
-
-/* AQUI COMEÇA   TERMINAR RESPONSIVO PROCURAR */
