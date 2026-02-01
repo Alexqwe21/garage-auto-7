@@ -1,0 +1,11 @@
+{
+  "name": "alexs/efata",
+  "description": "projeto cliente",
+  "authors": [
+    {
+      "name": "Alex Sandro",
+      "email": "alexsandropimenta16@gmail.com"
+    }
+  ],
+  "require": {}
+}
